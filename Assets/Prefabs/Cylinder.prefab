@@ -29,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1418270614042959234}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.05, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -123,6 +123,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectedMaterial: {fileID: 2100000, guid: 22d5003e51a51334890a88d9d57aaa9c, type: 2}
   audioClip: {fileID: 8300000, guid: b2960e2b84e5b35409acea0fd53772c8, type: 3}
+  DamageModels:
+  - {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  DamageMaterials:
+  - {fileID: 2100000, guid: 4898e862e439b5b4dbb3c9430b58396e, type: 2}
+  - {fileID: 2100000, guid: 7e31d06f46ad0574cbd02e89cc663bae, type: 2}
+  - {fileID: 2100000, guid: 05c307fb038bc794f9242c0dd46924cc, type: 2}
 --- !u!114 &5599587033018224831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,13 +160,25 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: -1087884461085779456}
+          m_TargetAssemblyTypeName: SelectedState, Assembly-CSharp
+          m_MethodName: TakeDamage
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
   - eventID: 1
     callback:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: -1087884461085779456}
           m_TargetAssemblyTypeName: SelectedState, Assembly-CSharp
-          m_MethodName: setOriginalMaterial
+          m_MethodName: setNewMaterial
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

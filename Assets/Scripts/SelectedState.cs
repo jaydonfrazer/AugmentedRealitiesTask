@@ -8,6 +8,10 @@ public class SelectedState : MonoBehaviour
     private Material originalMaterial; //Stores the original material
     public AudioClip audioClip; //Creates a slot in the editor for a sound file
     private AudioSource audioSource; //Creates audio playback functionality
+    private Mesh originalMesh; //Stores the original mesh
+    public List<Mesh> DamageModels; //Create list of damage models to cycle through
+    public List<Material> DamageMaterials; //Create list of damage materials to cycle through
+    private int Health; // Health
 
     // Start is called before the first frame update
     void Start()
@@ -16,8 +20,13 @@ public class SelectedState : MonoBehaviour
         audioSource = gameObject.AddComponent(typeof(AudioSource)) as AudioSource;
         audioSource.clip = audioClip;
 
-        //Store reference to current material
+        //Store reference to current material and model
         originalMaterial = gameObject.GetComponent<MeshRenderer>().material;
+        originalMesh = gameObject.GetComponent<MeshFilter>().mesh;
+
+        //Set Health
+        Health = DamageModels.Count;
+
     }
 
     // Public methods that will be exposed to the Event Trigger System
@@ -29,8 +38,27 @@ public class SelectedState : MonoBehaviour
     {
         gameObject.GetComponent<MeshRenderer>().material = selectedMaterial;
     }
-    public void setOriginalMaterial()
+    public void setNewMaterial()
     {
-        gameObject.GetComponent<MeshRenderer>().material = originalMaterial;
+        gameObject.GetComponent<MeshRenderer>().material = DamageMaterials[Health];
     }
+
+    public void TakeDamage()
+    {
+        // Debug Message
+        Debug.Log(gameObject.GetComponent<MeshFilter>().mesh);
+
+        if (Health > 0)
+        {
+            Health--;
+            gameObject.GetComponent<MeshFilter>().mesh = DamageModels[Health];
+        }
+        else
+        {
+            Health = DamageModels.Count;
+            gameObject.GetComponent<MeshRenderer>().material = originalMaterial;
+            gameObject.GetComponent<MeshFilter>().mesh = originalMesh;
+        }
+    }
+
 }
