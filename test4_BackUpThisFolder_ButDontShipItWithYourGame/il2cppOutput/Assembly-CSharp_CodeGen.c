@@ -29,7 +29,7 @@ extern void ARFeatheredPlaneMeshVisualizer_GenerateBoundaryUVs_mF756D3C1F7925A69
 extern void ARFeatheredPlaneMeshVisualizer__ctor_m9A77651BCAE58AA0B994FFF6C6B63B1CFF2729F6 (void);
 extern void ARFeatheredPlaneMeshVisualizer__cctor_m56285A000EE27A1631BE9C5BCDA5C376E5D133C3 (void);
 extern void RandomPrefabSpawn_Start_m7B75FC5EABC918CAB5A9C9AC7C1D41029905D5E9 (void);
-extern void RandomPrefabSpawn_SpawnObject_m216B32A02B781BFAA866C0EDFC423E97AD61ACA8 (void);
+extern void RandomPrefabSpawn_SpawnObject_m39F5B2F94039B1306BD8525B45DF539C5DF66894 (void);
 extern void RandomPrefabSpawn__ctor_mFBACB168D1107D8B7B5CC4FF0C8F74AC94F9013C (void);
 extern void SelectedState_Start_m4E0FDAC57E95540E9E21B8724B0ADE6A8187ADC3 (void);
 extern void SelectedState_playAudio_m60CD62E7EAD663322E7A8E64BBE5C5C87CD79F8A (void);
@@ -72,7 +72,7 @@ static Il2CppMethodPointer s_methodPointers[41] =
 	ARFeatheredPlaneMeshVisualizer__ctor_m9A77651BCAE58AA0B994FFF6C6B63B1CFF2729F6,
 	ARFeatheredPlaneMeshVisualizer__cctor_m56285A000EE27A1631BE9C5BCDA5C376E5D133C3,
 	RandomPrefabSpawn_Start_m7B75FC5EABC918CAB5A9C9AC7C1D41029905D5E9,
-	RandomPrefabSpawn_SpawnObject_m216B32A02B781BFAA866C0EDFC423E97AD61ACA8,
+	RandomPrefabSpawn_SpawnObject_m39F5B2F94039B1306BD8525B45DF539C5DF66894,
 	RandomPrefabSpawn__ctor_mFBACB168D1107D8B7B5CC4FF0C8F74AC94F9013C,
 	SelectedState_Start_m4E0FDAC57E95540E9E21B8724B0ADE6A8187ADC3,
 	SelectedState_playAudio_m60CD62E7EAD663322E7A8E64BBE5C5C87CD79F8A,
@@ -121,7 +121,7 @@ static const int32_t s_InvokerIndices[41] =
 	6510,
 	10087,
 	6510,
-	6510,
+	5070,
 	6510,
 	6510,
 	6510,

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,7 @@ public class SelectedState : MonoBehaviour
     public List<Mesh> DamageModels; //Create list of damage models to cycle through
     public List<Material> DamageMaterials; //Create list of damage materials to cycle through
     private int Health; // Health
+    public RandomPrefabSpawn PrefabSpawnReceiver = null;
 
     // Start is called before the first frame update
     void Start()
@@ -55,10 +57,14 @@ public class SelectedState : MonoBehaviour
         }
         else
         {
-            Health = DamageModels.Count;
-            gameObject.GetComponent<MeshRenderer>().material = originalMaterial;
-            gameObject.GetComponent<MeshFilter>().mesh = originalMesh;
+            //Health = DamageModels.Count;
+            //gameObject.GetComponent<MeshRenderer>().material = originalMaterial;
+            //gameObject.GetComponent<MeshFilter>().mesh = originalMesh;
+            if(PrefabSpawnReceiver != null)
+            {
+                PrefabSpawnReceiver.SpawnObject(gameObject.transform.parent);
+            }
+            Destroy(gameObject);
         }
     }
-
 }

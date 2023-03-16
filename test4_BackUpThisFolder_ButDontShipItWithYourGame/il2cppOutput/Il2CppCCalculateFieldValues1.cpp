@@ -625,6 +625,7 @@ struct PoseControl_t91437AFF2C633EDDA720FB429D7BAD3C8DF97FC3;
 struct PropagationPaths_tA17A0F2CAFF1A86B552ED6D984DAA2F14AB2B0E5;
 struct PropertyInfo_t;
 struct QuaternionControl_t18A2F742850FC2FD82A1F980A35C188A29F1A0B1;
+struct RandomPrefabSpawn_tE32E672832A80F7C24EC39E91F85D268FD3C9FD9;
 struct RectMask2D_tACF92BE999C791A665BD1ADEABF5BCEB82846670;
 struct RectOffset_t6358774A0DEEABA4586840CB9BC7DC88B39660B5;
 struct RectTransform_t6C5DA5E41A89E0F488B001E45E58963480E543A5;
@@ -12467,6 +12468,7 @@ struct SelectedState_tFEDFA49F96C888DAA897392256045C8D77B37E1D  : public MonoBeh
 	List_1_t43FB89B126C93A6B04630BC64C751BBE95AFEAF4* ___DamageModels_10;
 	List_1_t386E09F4F22DDE4D2AC41A8567FFF283C254537B* ___DamageMaterials_11;
 	int32_t ___Health_12;
+	RandomPrefabSpawn_tE32E672832A80F7C24EC39E91F85D268FD3C9FD9* ___PrefabSpawnReceiver_13;
 };
 struct TextGenerator_t6B84DC798596D3A9944DC346DD453C075EE62366  : public RuntimeObject
 {
@@ -19495,9 +19497,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5076[6] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5077[3] = 
 {
 	static_cast<int32_t>(offsetof(RandomPrefabSpawn_tE32E672832A80F7C24EC39E91F85D268FD3C9FD9, ___Prefabs_5)),static_cast<int32_t>(offsetof(RandomPrefabSpawn_tE32E672832A80F7C24EC39E91F85D268FD3C9FD9, ___ObjectToSpawn_6)),static_cast<int32_t>(offsetof(RandomPrefabSpawn_tE32E672832A80F7C24EC39E91F85D268FD3C9FD9, ___prefabIndex_7)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5078[8] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5078[9] = 
 {
-	static_cast<int32_t>(offsetof(SelectedState_tFEDFA49F96C888DAA897392256045C8D77B37E1D, ___selectedMaterial_5)),static_cast<int32_t>(offsetof(SelectedState_tFEDFA49F96C888DAA897392256045C8D77B37E1D, ___originalMaterial_6)),static_cast<int32_t>(offsetof(SelectedState_tFEDFA49F96C888DAA897392256045C8D77B37E1D, ___audioClip_7)),static_cast<int32_t>(offsetof(SelectedState_tFEDFA49F96C888DAA897392256045C8D77B37E1D, ___audioSource_8)),static_cast<int32_t>(offsetof(SelectedState_tFEDFA49F96C888DAA897392256045C8D77B37E1D, ___originalMesh_9)),static_cast<int32_t>(offsetof(SelectedState_tFEDFA49F96C888DAA897392256045C8D77B37E1D, ___DamageModels_10)),static_cast<int32_t>(offsetof(SelectedState_tFEDFA49F96C888DAA897392256045C8D77B37E1D, ___DamageMaterials_11)),static_cast<int32_t>(offsetof(SelectedState_tFEDFA49F96C888DAA897392256045C8D77B37E1D, ___Health_12)),};
+	static_cast<int32_t>(offsetof(SelectedState_tFEDFA49F96C888DAA897392256045C8D77B37E1D, ___selectedMaterial_5)),static_cast<int32_t>(offsetof(SelectedState_tFEDFA49F96C888DAA897392256045C8D77B37E1D, ___originalMaterial_6)),static_cast<int32_t>(offsetof(SelectedState_tFEDFA49F96C888DAA897392256045C8D77B37E1D, ___audioClip_7)),static_cast<int32_t>(offsetof(SelectedState_tFEDFA49F96C888DAA897392256045C8D77B37E1D, ___audioSource_8)),static_cast<int32_t>(offsetof(SelectedState_tFEDFA49F96C888DAA897392256045C8D77B37E1D, ___originalMesh_9)),static_cast<int32_t>(offsetof(SelectedState_tFEDFA49F96C888DAA897392256045C8D77B37E1D, ___DamageModels_10)),static_cast<int32_t>(offsetof(SelectedState_tFEDFA49F96C888DAA897392256045C8D77B37E1D, ___DamageMaterials_11)),static_cast<int32_t>(offsetof(SelectedState_tFEDFA49F96C888DAA897392256045C8D77B37E1D, ___Health_12)),static_cast<int32_t>(offsetof(SelectedState_tFEDFA49F96C888DAA897392256045C8D77B37E1D, ___PrefabSpawnReceiver_13)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5079[3] = 
 {
 	static_cast<int32_t>(offsetof(MonoScriptInfo_tB6E56480CE09067429D885894639F57C50C0D101, ___nameSpace_0)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(MonoScriptInfo_tB6E56480CE09067429D885894639F57C50C0D101, ___className_1)) + static_cast<int32_t>(sizeof(RuntimeObject)),static_cast<int32_t>(offsetof(MonoScriptInfo_tB6E56480CE09067429D885894639F57C50C0D101, ___isPartial_2)) + static_cast<int32_t>(sizeof(RuntimeObject)),};

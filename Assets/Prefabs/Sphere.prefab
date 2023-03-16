@@ -129,6 +129,8 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 4898e862e439b5b4dbb3c9430b58396e, type: 2}
   - {fileID: 2100000, guid: 7e31d06f46ad0574cbd02e89cc663bae, type: 2}
   - {fileID: 2100000, guid: 05c307fb038bc794f9242c0dd46924cc, type: 2}
+  PrefabSpawnReceiver: {fileID: 3840060144730661440, guid: d39ff1eab84ae094c9d4902bf7a7bfd3,
+    type: 3}
 --- !u!114 &3082685632680234257
 MonoBehaviour:
   m_ObjectHideFlags: 0

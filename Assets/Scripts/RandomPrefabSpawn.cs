@@ -10,13 +10,14 @@ public class RandomPrefabSpawn : MonoBehaviour
 
     void Start()
     {
-        SpawnObject();
+        SpawnObject(gameObject.transform);
     }
 
-    void SpawnObject()
+    //Public so it can be called by other scripts
+    public void SpawnObject(Transform transformPrefab)
     {
         prefabIndex = Random.Range(0, Prefabs.Count);
         ObjectToSpawn = Prefabs[prefabIndex];
-        GameObject newObject = Instantiate(ObjectToSpawn, gameObject.transform);
+        GameObject newObject = Instantiate(ObjectToSpawn, transformPrefab);
     }
 }

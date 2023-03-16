@@ -16,9 +16,9 @@
 static const Il2CppMethodExecutionContextInfo g_methodExecutionContextInfos[23] = 
 {
 	{ 4450, 0,  0 },
-	{ 11353, 1,  17 },
-	{ 12524, 2,  18 },
-	{ 10867, 3,  18 },
+	{ 11354, 1,  17 },
+	{ 12525, 2,  18 },
+	{ 10868, 3,  18 },
 	{ 4436, 0,  34 },
 	{ 8522, 4,  35 },
 	{ 9603, 5,  37 },
@@ -30,14 +30,14 @@ static const Il2CppMethodExecutionContextInfo g_methodExecutionContextInfos[23] 
 	{ 7918, 11,  40 },
 	{ 7918, 12,  40 },
 	{ 10621, 13,  48 },
-	{ 11353, 1,  50 },
-	{ 12524, 2,  51 },
-	{ 10867, 3,  51 },
-	{ 11353, 1,  52 },
-	{ 12524, 2,  53 },
-	{ 10867, 3,  53 },
-	{ 11353, 1,  54 },
-	{ 10867, 3,  55 },
+	{ 11354, 1,  50 },
+	{ 12525, 2,  51 },
+	{ 10868, 3,  51 },
+	{ 11354, 1,  52 },
+	{ 12525, 2,  53 },
+	{ 10868, 3,  53 },
+	{ 11354, 1,  54 },
+	{ 10868, 3,  55 },
 };
 #else
 static const Il2CppMethodExecutionContextInfo g_methodExecutionContextInfos[1] = { { 0, 0, 0 } };

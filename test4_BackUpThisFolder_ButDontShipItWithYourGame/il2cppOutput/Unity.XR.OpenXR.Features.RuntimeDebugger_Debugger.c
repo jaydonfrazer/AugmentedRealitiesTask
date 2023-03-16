@@ -16,12 +16,12 @@
 static const Il2CppMethodExecutionContextInfo g_methodExecutionContextInfos[8] = 
 {
 	{ 9647, 0,  3 },
-	{ 12265, 1,  3 },
+	{ 12266, 1,  3 },
 	{ 6371, 2,  3 },
 	{ 9647, 3,  3 },
-	{ 12265, 4,  3 },
+	{ 12266, 4,  3 },
 	{ 9647, 5,  3 },
-	{ 12265, 6,  3 },
+	{ 12266, 6,  3 },
 	{ 6371, 7,  3 },
 };
 #else
