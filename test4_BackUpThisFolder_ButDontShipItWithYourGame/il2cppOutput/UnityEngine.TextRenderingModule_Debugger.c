@@ -15,11 +15,11 @@
 #if IL2CPP_MONO_DEBUGGER
 static const Il2CppMethodExecutionContextInfo g_methodExecutionContextInfos[6] = 
 {
-	{ 11823, 0,  7 },
-	{ 11823, 1,  8 },
-	{ 11826, 2,  10 },
-	{ 11823, 0,  10 },
-	{ 12266, 3,  14 },
+	{ 11825, 0,  7 },
+	{ 11825, 1,  8 },
+	{ 11828, 2,  10 },
+	{ 11825, 0,  10 },
+	{ 12268, 3,  14 },
 	{ 7533, 4,  14 },
 };
 #else

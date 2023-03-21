@@ -37,19 +37,19 @@ static const Il2CppMethodExecutionContextInfoIndex g_methodExecutionContextInfoI
 IL2CPP_EXTERN_C Il2CppSequencePoint g_sequencePointsUnity_XR_OpenXR_Features_OculusQuestSupport[];
 Il2CppSequencePoint g_sequencePointsUnity_XR_OpenXR_Features_OculusQuestSupport[13] = 
 {
-	{ 35036, 0, 0, 0, 0, 0, -1, kSequencePointKind_Normal, 0, 0 },
-	{ 35036, 0, 0, 0, 0, 0, 16777215, kSequencePointKind_Normal, 0, 1 },
-	{ 35036, 1, 23, 23, 44, 45, 0, kSequencePointKind_Normal, 0, 2 },
-	{ 35036, 1, 23, 23, 46, 59, 1, kSequencePointKind_Normal, 0, 3 },
-	{ 35036, 1, 23, 23, 60, 61, 5, kSequencePointKind_Normal, 0, 4 },
-	{ 35037, 0, 0, 0, 0, 0, -1, kSequencePointKind_Normal, 0, 5 },
-	{ 35037, 0, 0, 0, 0, 0, 16777215, kSequencePointKind_Normal, 0, 6 },
-	{ 35037, 1, 25, 26, 28, 324, 0, kSequencePointKind_Normal, 0, 7 },
-	{ 35039, 0, 0, 0, 0, 0, -1, kSequencePointKind_Normal, 0, 8 },
-	{ 35039, 0, 0, 0, 0, 0, 16777215, kSequencePointKind_Normal, 0, 9 },
-	{ 35039, 2, 40, 40, 9, 40, 0, kSequencePointKind_Normal, 0, 10 },
-	{ 35039, 2, 44, 44, 9, 41, 7, kSequencePointKind_Normal, 0, 11 },
-	{ 35039, 2, 44, 44, 9, 41, 15, kSequencePointKind_StepOut, 0, 12 },
+	{ 35046, 0, 0, 0, 0, 0, -1, kSequencePointKind_Normal, 0, 0 },
+	{ 35046, 0, 0, 0, 0, 0, 16777215, kSequencePointKind_Normal, 0, 1 },
+	{ 35046, 1, 23, 23, 44, 45, 0, kSequencePointKind_Normal, 0, 2 },
+	{ 35046, 1, 23, 23, 46, 59, 1, kSequencePointKind_Normal, 0, 3 },
+	{ 35046, 1, 23, 23, 60, 61, 5, kSequencePointKind_Normal, 0, 4 },
+	{ 35047, 0, 0, 0, 0, 0, -1, kSequencePointKind_Normal, 0, 5 },
+	{ 35047, 0, 0, 0, 0, 0, 16777215, kSequencePointKind_Normal, 0, 6 },
+	{ 35047, 1, 25, 26, 28, 324, 0, kSequencePointKind_Normal, 0, 7 },
+	{ 35049, 0, 0, 0, 0, 0, -1, kSequencePointKind_Normal, 0, 8 },
+	{ 35049, 0, 0, 0, 0, 0, 16777215, kSequencePointKind_Normal, 0, 9 },
+	{ 35049, 2, 40, 40, 9, 40, 0, kSequencePointKind_Normal, 0, 10 },
+	{ 35049, 2, 44, 44, 9, 41, 7, kSequencePointKind_Normal, 0, 11 },
+	{ 35049, 2, 44, 44, 9, 41, 15, kSequencePointKind_StepOut, 0, 12 },
 };
 #else
 extern Il2CppSequencePoint g_sequencePointsUnity_XR_OpenXR_Features_OculusQuestSupport[];
@@ -72,8 +72,8 @@ static const Il2CppSequencePointSourceFile g_sequencePointSourceFiles[1] = { NUL
 #if IL2CPP_MONO_DEBUGGER
 static const Il2CppTypeSourceFilePair g_typeSourceFiles[2] = 
 {
-	{ 5177, 1 },
-	{ 5178, 2 },
+	{ 5178, 1 },
+	{ 5179, 2 },
 };
 #else
 static const Il2CppTypeSourceFilePair g_typeSourceFiles[1] = { { 0, 0 } };

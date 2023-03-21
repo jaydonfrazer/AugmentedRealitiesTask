@@ -36,7 +36,14 @@ extern void SelectedState_playAudio_m60CD62E7EAD663322E7A8E64BBE5C5C87CD79F8A (v
 extern void SelectedState_setSelectedMaterial_m638BCC2A38E2E2533BFDE5321B0CAC718E34783A (void);
 extern void SelectedState_setNewMaterial_m859334803DE74AC49F7B6F26418DCDB5490B7037 (void);
 extern void SelectedState_TakeDamage_m222A14247149758016544D9384E848A07A4B281D (void);
+extern void SelectedState_DestroyThenSpawn_m2B9D0A7F820B15CFBAE9BFEAEA00B44CE96FD842 (void);
 extern void SelectedState__ctor_mC7D631465772C45391DCA885AC071CC616EF80AA (void);
+extern void U3CDestroyThenSpawnU3Ed__16__ctor_mA8D91C5B86576FFAF5A748205D9B5EFFF25A9331 (void);
+extern void U3CDestroyThenSpawnU3Ed__16_System_IDisposable_Dispose_mE6AD793E99D6615CC53C9A2580BBB83F88F18542 (void);
+extern void U3CDestroyThenSpawnU3Ed__16_MoveNext_m7A04124E3C62643162FD6EB8413C74E276219D5D (void);
+extern void U3CDestroyThenSpawnU3Ed__16_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mCEBD7000E082FEFF0FD2FBCD4E1771B89669DF1F (void);
+extern void U3CDestroyThenSpawnU3Ed__16_System_Collections_IEnumerator_Reset_m2804A63A75BDBCC323A6D10286214B1B3236A87B (void);
+extern void U3CDestroyThenSpawnU3Ed__16_System_Collections_IEnumerator_get_Current_m048A3F50FAC6CE554EED7AFCD258743843BE6DC4 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_IsEditorOnly_m59E10A16B0BDEA496377805E39C3D90B1E2C4815 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes_Get_mDAD527916A4779DB4ACAFEADC3BA7372671FA647 (void);
 extern void UnitySourceGeneratedAssemblyMonoScriptTypes__ctor_mE2C680837D47039E3F06032AA8C63FEDB7E783A5 (void);
@@ -53,7 +60,7 @@ extern void PrefabImagePairManager_GetPrefabForReferenceImage_m1CB723A849F69B8C9
 extern void PrefabImagePairManager_SetPrefabForReferenceImage_mDE4CF8A5D0DF4899BAE8F821672967D3E0395CBB (void);
 extern void PrefabImagePairManager__ctor_mEE06C28338AEEDBD041E37091F48DDD46BED8A7B (void);
 extern void NamedPrefab__ctor_mE953E03F91A0AD30A2AC6B24022BAB1DDD627B38 (void);
-static Il2CppMethodPointer s_methodPointers[41] = 
+static Il2CppMethodPointer s_methodPointers[48] = 
 {
 	AnchorCreator_get_AnchorPrefab_mBBAF7805E9D9F8D79408EE642D153BC76306B25A,
 	AnchorCreator_set_AnchorPrefab_m53CC9CC3022C713826B44536B48B462C8A1FACFF,
@@ -79,7 +86,14 @@ static Il2CppMethodPointer s_methodPointers[41] =
 	SelectedState_setSelectedMaterial_m638BCC2A38E2E2533BFDE5321B0CAC718E34783A,
 	SelectedState_setNewMaterial_m859334803DE74AC49F7B6F26418DCDB5490B7037,
 	SelectedState_TakeDamage_m222A14247149758016544D9384E848A07A4B281D,
+	SelectedState_DestroyThenSpawn_m2B9D0A7F820B15CFBAE9BFEAEA00B44CE96FD842,
 	SelectedState__ctor_mC7D631465772C45391DCA885AC071CC616EF80AA,
+	U3CDestroyThenSpawnU3Ed__16__ctor_mA8D91C5B86576FFAF5A748205D9B5EFFF25A9331,
+	U3CDestroyThenSpawnU3Ed__16_System_IDisposable_Dispose_mE6AD793E99D6615CC53C9A2580BBB83F88F18542,
+	U3CDestroyThenSpawnU3Ed__16_MoveNext_m7A04124E3C62643162FD6EB8413C74E276219D5D,
+	U3CDestroyThenSpawnU3Ed__16_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mCEBD7000E082FEFF0FD2FBCD4E1771B89669DF1F,
+	U3CDestroyThenSpawnU3Ed__16_System_Collections_IEnumerator_Reset_m2804A63A75BDBCC323A6D10286214B1B3236A87B,
+	U3CDestroyThenSpawnU3Ed__16_System_Collections_IEnumerator_get_Current_m048A3F50FAC6CE554EED7AFCD258743843BE6DC4,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_IsEditorOnly_m59E10A16B0BDEA496377805E39C3D90B1E2C4815,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_Get_mDAD527916A4779DB4ACAFEADC3BA7372671FA647,
 	UnitySourceGeneratedAssemblyMonoScriptTypes__ctor_mE2C680837D47039E3F06032AA8C63FEDB7E783A5,
@@ -100,9 +114,9 @@ static Il2CppMethodPointer s_methodPointers[41] =
 extern void NamedPrefab__ctor_mE953E03F91A0AD30A2AC6B24022BAB1DDD627B38_AdjustorThunk (void);
 static Il2CppTokenAdjustorThunkPair s_adjustorThunks[1] = 
 {
-	{ 0x06000029, NamedPrefab__ctor_mE953E03F91A0AD30A2AC6B24022BAB1DDD627B38_AdjustorThunk },
+	{ 0x06000030, NamedPrefab__ctor_mE953E03F91A0AD30A2AC6B24022BAB1DDD627B38_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[41] = 
+static const int32_t s_InvokerIndices[48] = 
 {
 	6410,
 	5070,
@@ -128,7 +142,14 @@ static const int32_t s_InvokerIndices[41] =
 	6510,
 	6510,
 	6510,
+	6410,
 	6510,
+	5037,
+	6510,
+	6310,
+	6410,
+	6510,
+	6410,
 	10014,
 	10044,
 	6510,
@@ -151,7 +172,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	41,
+	48,
 	s_methodPointers,
 	1,
 	s_adjustorThunks,
